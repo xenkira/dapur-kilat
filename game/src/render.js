@@ -318,7 +318,6 @@ function drawHud(ctx, g) {
 }
 
 function drawBoardArea(ctx, g) {
-  text(ctx, 'PESANAN', LAYOUT.board.x, LAYOUT.board.y - 14, 15, '#f6e3c5');
   if (g.orders.length === 0) {
     ctx.fillStyle = 'rgba(255,248,236,0.75)';
     rr(ctx, LAYOUT.board.x, LAYOUT.board.y, LAYOUT.board.w, 90, 12);
@@ -335,6 +334,7 @@ function drawMessage(ctx, g) {
   ctx.save();
   ctx.globalAlpha = 0.95;
   ctx.fillStyle = '#2e1d0c';
+  ctx.font = 'bold 16px system-ui, -apple-system, sans-serif';
   const w = ctx.measureText(g.message).width + 36;
   rr(ctx, (VIEW_W - Math.max(w, 200)) / 2, 76, Math.max(w, 200), 36, 18);
   ctx.fill();

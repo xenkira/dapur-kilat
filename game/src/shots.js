@@ -27,6 +27,7 @@ export function applyShot(g, shot, seed) {
     g.board = { kind: 'tomato', chopsLeft: 1 };
     g.plate = ['bun', 'patty', 'lettuce'];
     g.hand = { kind: 'tomato', prepped: true };
+    g.mouse = { x: 1060, y: 470 }; // the chopped tomato hovers over the plate
     g.coins = 120;
     g.served = 3;
     g.combo = 2;
