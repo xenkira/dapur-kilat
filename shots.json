@@ -1,0 +1,6 @@
+[
+  { "name": "1-cover.png", "query": "?shot=mid&seed=1" },
+  { "name": "2-start.png", "query": "?shot=start&seed=1" },
+  { "name": "3-serve.png", "query": "?shot=serve&seed=1" },
+  { "name": "4-end.png", "query": "?shot=end&seed=1" }
+]
